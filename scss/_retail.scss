@@ -1,0 +1,64 @@
+.item-img{
+    display: block;
+    height: 224px;
+    width: 100%;
+}
+.info-icon{
+    vertical-align: bottom;
+    width: 21px;
+    height: 21px;
+    margin-right: 12px;
+}
+//上面是通用區
+// @media(max-width:960px){
+//     label{
+//         padding: 0 5%
+//     }
+// }
+.phot {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+}
+.phot > li{
+    width: 31%;
+    margin: 0 10px 32px;
+}
+@media(max-width:960px){
+    .phot > li{
+        width: 47%;
+        margin: 0 5px 16px;
+    }
+}
+@media(max-width: 767px){
+    .phot > li{
+      width: 65%;
+      margin: 0 auto 16px;
+    }
+}
+.phot > li h2{
+    font-size: $fontFig;
+    line-height: 36px;
+    font-weight: bold;
+    border: 1px solid #00000020;
+    padding-left: 24px;
+}
+.phot > li ul {
+    border: 1px solid #00000020;
+    padding: 10px;
+}
+.phot > li ul li{
+    margin-bottom: 8px;
+}
+.phot > li ul li h4{
+    display: inline-block;
+}
+.a-button{
+    background-color: #000;
+    padding: 20px 137px;
+    text-align: center;
+}
+.a-button:hover{
+    background-color: #333;
+    color: #fff;
+}

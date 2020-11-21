@@ -1,0 +1,145 @@
+.blogs-main h2{
+    color: $titleColor;
+    font-size: $fontFig + 6;
+    line-height: 63px;
+}
+@media(max-width:1024px){
+    .blogs-main h2{
+        font-size: $fontSma + 4 ;
+        line-height: 20px;
+    }
+}
+@media(max-width:768px){
+    .blogs-main h2{
+        font-size: $fontSma;
+    }
+}
+.nav{
+    background-color: #650300;
+    padding: 12px 0 14px;
+}
+.nav-menu{
+    width: 100%;
+}
+.nav ul{
+    width: 100%;
+}
+.nav ul li{
+    margin-right: 24px;
+}
+.nav ul li a:hover{
+    color: yellow;
+}
+/*中間區塊*/
+.blogs-main{
+    padding-top: 82px;
+}
+@media(max-width:768px){
+    .blogs-main{
+        padding: 82px 15px 0;
+    }
+}
+.blogs-main > li{
+    margin-bottom: 60px;
+}
+@media(max-width:768px){
+    .blogs-main > li{
+        flex-direction: column;
+        margin-bottom: 26px;
+    }
+}
+.blogs-main li:nth-child(1) > img{
+    width: 588px;
+    height: 400px;
+}
+@media(max-width:1024px){
+    .blogs-main li:nth-child(1) > img{
+        width: 50%;
+        height: auto;
+    }
+    .blogs-main li > img{
+        width: 50%;
+        height: auto;
+    }
+}
+@media(max-width:768px){
+    .blogs-main li:nth-child(1) > img{
+        width: 100%;
+        height: auto;
+    }
+    .blogs-main li > img{
+        width: 100%;
+        height: auto;
+    }
+}
+.bosgItem{
+    padding: 0 15px;
+    position: relative;
+}
+@media(max-width:768px){
+    .bosgItem{
+        padding:8px 0 0 0 ;
+    }
+}
+.bosgItem ul{
+    margin-bottom: 24px;
+}
+.bosgItem ul li{
+    font-size: $fontSma + 4;
+    line-height: 30px;
+}
+@media(max-width:1024px){
+    .bosgItem ul li{
+        font-size:$fontSma ;
+    }
+}
+@media(max-width:768px){
+    .bosgItem ul li{
+        font-size:$fontss + 2;
+    }
+}
+.bosgItem p{
+    color: #555555;
+    font-size: $fontSma + 4;
+    line-height: 30px;
+}
+@media(max-width:1024px){
+    .bosgItem p{
+        font-size:$fontss + 2;
+        line-height: 21px;
+    }
+}
+@media(max-width:768px){
+    .bosgItem p{
+        display: none;
+    }
+}
+.bosgItem a{
+    color: #650300;
+    font-size: $fontFig + 12;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: bold;
+}
+@media(max-width:1024px){
+    .bosgItem a{
+        display: none;
+    }
+}
+.bosgItem a::before{
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #AA0601;
+    width: 0;
+    opacity: 0;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+.bosgItem a:hover::before {
+    width: 100%;
+    transition: 0.5s;
+    opacity: 1;
+}

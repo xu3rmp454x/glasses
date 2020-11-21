@@ -1,0 +1,73 @@
+.faq-banner{
+    background-image: url(/imges/qa.png);
+    height: 304px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 80px;
+}
+.bannerTitle{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+.FAQ-title{
+    font-size:$fontBBig ;
+    display: flex;
+}
+@media(max-width:1270px){
+    .FAQ-title{
+        padding-left: 5%;
+    }
+}
+@media(max-width:768px){
+    .FAQ-title{
+        font-size: $fontBig;
+    }
+}
+@media(max-width:570px){
+    .FAQ-title{
+        font-size: $fontFig + 4;
+    }
+}
+.FAQ-title::after {
+    content: '';
+    width: 58px;
+    height: 58px;
+    background: url(/imges/icon-help.svg) no-repeat center;
+    background-size: contain;
+    margin-left: 24px;
+}
+@media(max-width:570px){
+    .FAQ-title::after{
+        width: 28px;
+        height: 28px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+}
+//內容區
+@media(max-width:1270px){
+    .far-main{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+.far-main h3{
+    font-size: $fontFig + 8;
+    margin-bottom: 35px;
+}
+.far-main .itemeTitle{
+    font-size: $fontSma + 4;
+    margin-bottom: 15px;
+}
+.far-main .item p{
+    line-height: 24px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    padding-left: 90px;
+}
+@media(max-width:1024px){
+    .far-main .item p{
+        padding-left: 0;
+    }
+}

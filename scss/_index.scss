@@ -1,0 +1,123 @@
+@media(max-width:768px){
+    nav ul{
+        display: none;
+    }
+    .banner{
+        padding-top: 110px;
+    }
+}
+.container h2{
+    font-size: $fontBig - 6;
+    line-height: 63px;
+}
+@media(max-width:1000px){
+    .container h2{
+        font-size: $fontFig + 8;
+    }
+}
+@media(max-width:414px){
+    .container h2{
+        line-height: 0;
+        font-size: $fontFig - 4;
+    }
+}
+.container h3{
+    font-size:$fontFig + 8 ;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+@media(max-width:1000px){
+    .container h3{
+        font-size: $fontFig + 6;
+    }
+}
+@media(max-width:414px){
+    .container h3{
+        font-size: $fontSma;
+        margin-bottom: 10px;
+    }
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media(max-width:1000px){
+    .product{
+        justify-content: space-evenly;
+    }
+}
+.product li{
+    width: 255px;
+    height: 164px;
+    margin-bottom: 164px;
+}
+@media(max-width:1000px){
+    .product li{
+        width: 330px;
+    }
+    .product li img{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .product li{
+        width: 80%;
+        height: auto;
+    }
+}
+.product-flex{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform:uppercase
+}
+.model{
+    font-weight: normal;
+}
+.price{
+    color: $MainColor;
+    font-weight: normal;
+}
+.buttonColor{
+    display:inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: $fontFig;
+    cursor: pointer;
+}
+.Color1{
+    color: #5F3E2D;
+}
+.Color2{
+    color: #B75929;
+}
+.main-nav{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 156px;
+    text-align: center;
+}
+@media(max-width:350px){
+    .main-nav{
+        padding-bottom: 50px;
+    }
+}
+.main-nav li{
+    border: 1px solid #555555;
+}
+.main-nav li a{
+    font-size: $fontSma + 2;
+    color: #000;
+    padding: 15px;
+}
+@media(max-width:350px){
+    .main-nav li a{
+        padding: 5px;
+    }
+}
+.main-nav li a:hover{
+    background-color: #555;
+    color: #fff;
+}

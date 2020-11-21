@@ -1,0 +1,157 @@
+.planning-list a{
+    color: #000;
+    font-weight: 900;
+    padding: 8px 0 17px;
+}
+@media(max-width:768px){
+    .planning-list a{
+        font-size: $fontss + 2;
+        padding: 0 0 14px;
+    }
+}
+.listRED{
+    color: $MainColor;
+}
+.special{
+    color: $MainColor;
+    font-size: $fontFig;
+}
+@media(max-width:768px){
+    .special{
+        font-size: $fontss + 2;
+    }
+}
+.special li{
+    margin-right: 16px;
+    font-weight: 900;
+}
+.planMain h2{
+    font-size: $fontBig;
+    line-height: 95px;
+}
+@media(max-width:768px){
+    .planMain h2{
+        font-size: $fontFig - 4;
+        color: $titleColor;
+        line-height: 30px;
+    }
+}
+.planMain ul{
+    margin-bottom: 23px;
+}
+@media(max-width:768px){
+    .planMain ul{
+        margin-bottom: 19px;
+        font-size: $fontss + 2;
+    }
+}
+@media(max-width:768px){
+    .mobile{
+        flex-direction: column;
+    }
+}
+.planWrap{
+    width: 825px;
+    margin-right: 31px;
+    padding-bottom: 304px;
+}
+@media(max-width:768px){
+    .planWrap{
+        width: 100%;
+        padding: 70px 15px 0;
+    }
+}
+.siderbar{
+    width: 20%;
+}
+@media(max-width:768px){
+    .siderbar{
+        width: 100%;
+        padding: 39px 15px 56px;
+    }
+}
+.content p{
+    font-size: $fontSma +4;
+    line-height: 30px;
+    color: #0A0A0A;
+    opacity: .6;
+    margin-bottom: 36px;
+    padding-top: 24px;
+    font-weight: bold;
+}
+@media(max-width:768px){
+    .content p{
+        font-size: $fontSma;
+        line-height: 24px;
+        margin-bottom: 24px;
+        padding-top: 16px;
+    }
+}
+.share li{
+    margin-right: 15px;
+}
+.share li:nth-child(1){
+    font-weight: 900;
+    font-size: $fontSma + 4;
+    margin-bottom: 3px;
+}
+.planWrap hr{
+    margin: 16px 0 24px;
+}
+
+/*側邊攔*/
+.siderbar{
+    color: $MainColor ;
+    padding-top: 57px;
+    font-weight: 900;
+}
+.siderbar img{
+    width: 24px;
+    vertical-align: sub;
+    display: inline-block;
+}
+.siderbar span{
+    font-size: $fontSma + 4;
+}
+.sider-text{
+    padding-top: 48px;
+    line-height: 25px;
+}
+@media(max-width:768px){
+    .sider-text{
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.control img{
+    width: 24px;
+    vertical-align: sub;
+    transition: all .5s;
+}
+.control a{
+    color: #000;
+    display: inline-block;
+    font-weight: bold;  
+    line-height: 30px;
+    font-size:$fontSma + 3 ;
+}
+.control a:hover{
+    opacity: 0.5;
+}
+@media(max-width:768px){
+    .control{
+        flex-direction: column;
+    }
+    .redo{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .redo a{
+        margin-left: 11px;
+    }
+    .control a{
+        font-size:$fontss + 2 ;
+    }
+}

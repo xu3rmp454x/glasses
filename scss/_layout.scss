@@ -1,0 +1,416 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.pabout-5{
+    padding: 0 5%;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: $Main-font;
+    transition: all .5s;
+}
+.m-auto{
+    margin: 0 auto;
+    max-width: 1110px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.mr-30{
+    margin-right: 30px;
+}
+.mr-16{
+    margin-right: 16px;
+}
+.ml-8{
+    margin-left: 8px;
+}
+.mr-8{
+    margin-right: 8px;
+}
+// 文字置中
+.textCenter{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.d-flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.d-flex-column{
+    flex-direction: column;
+}
+.d-alignCenter{
+    align-items: center;
+}
+.d-flx-justify{
+    justify-content: center;
+}
+.d-flex-between{
+    justify-content: space-between;
+}
+//flex
+//必要
+.header{
+    background-color: $MainColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+}
+@media(max-width:768px){
+    .header{
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+}
+.header .menu{
+    display: flex;
+    margin-right: 88px;
+}
+/*PC版隱藏 手機選單*/
+.show-menu{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-menu.svg);
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+}
+@media(max-width:768px){
+    .show-menu{
+        display: block;
+    }
+}
+.mobile-nav{
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 100;
+    transition: all .5s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    top: 108px;
+    background-color:#000;
+    text-align: center;
+}
+.mobile-nav li{
+    border-bottom: 2px solid #fff;
+}
+.mobile-nav li a{
+    padding: 20px 0 ;
+    color: #FFFFFF;
+    font-size: $fontSma + 2;
+}
+.mobile-nav li a:hover{
+    color: red;
+}
+@media(max-width:768px){
+    .mobile-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .show .mobile-nav{
+        max-height: 264px;
+    }
+}
+@media(max-width:1000px){
+    .header .menu{
+        margin-right: 0;
+    }
+}
+@media(max-width:768px){
+    .header .menu{
+        display: none;
+    }
+    // .header{
+    //     position: fixed;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: 100;
+    // }
+}
+.menu li{
+    margin-right: 64px;
+}
+.menu li a:hover{
+    color: yellow;
+}
+.logo{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png);
+    width: 80px;
+    height: 49px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 88px;
+}
+@media(max-width:768px){
+    .logo{
+        margin-left: 8px;
+    }
+}
+//header結尾
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+@media(max-width:767px){
+    nav ul{
+        justify-content: start;
+    }
+    nav ul li img{
+        width: 30px;
+        height: 30px;
+    }
+}
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 462px;
+    border: #DCDCDC 1px solid;
+    padding: 24px 0;
+    position: relative;
+}
+@media(max-width:567px){
+    nav ul li{
+        padding: 8px 0;
+    }
+}
+nav ul li a{
+    color: #000000;
+    margin-left: 8px;
+    font-size: $fontBig - 6;
+}
+@media(max-width:1000px){
+    nav ul li a{
+        font-size: 28px;
+    }
+}
+@media(max-width:569px){
+    nav ul li a{
+        font-size: $fontss;
+    }
+}
+
+nav ul span{
+    position: absolute;
+    width: 1%;
+    display: block;
+    height: 10px;
+    bottom: 0;
+    background: red;
+    opacity: 0;
+    transition: all .3s;
+}
+@media(max-width:569px){
+    nav ul span{
+        height: 3px;
+    }
+}
+nav ul li:hover span{
+    opacity: 1;
+    width: 50%;
+}
+//banner
+.banner{
+    display: flex;
+    margin-bottom: 88px;
+    justify-content: center;
+}
+@media(max-width:1000px){
+    .banner{
+        margin-bottom: 40px;
+    }
+}
+.banner img{
+    margin-right: 30px;
+}
+@media(max-width:1000px){
+    .banner{
+        flex-direction: column;
+    }
+    .banner img{
+
+        margin-right: 0;
+    }
+}
+@media(max-width:550px){
+}
+//表尾
+.footer{
+    background-color: $MainColor;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@media(max-width:568px){
+    .footer{
+        padding: 8px 0;
+    }
+}
+.footer .footerWrap{
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width:1000px){
+    .footer .footerWrap{
+        width: 90%;
+    }
+}
+.footerTop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+}
+@media(max-width:350px){
+    .footer .footerTop{
+        margin-bottom: 5px;
+    }
+}
+.foterMenu{
+    display: flex;
+    align-items: center;
+}
+@media(max-width:540px){
+    .foterMenu{
+        display: none;
+    }
+}
+.foterMenu li a{
+    color: $Main-font;
+}
+.foterMenu li a:hover{
+    color: yellow;
+}
+.foterMenu li{
+    margin-right: 64px;
+}
+@media(max-width:1000px){
+    .foterMenu li{
+        margin-right: 40px;
+    }
+}
+@media(max-width:670px){
+    .foterMenu li{
+        margin-right: 20px;
+    }
+}
+@media(max-width:580px){
+    .foterMenu li{
+        margin-right: 8px;
+    }
+}
+.linkBar{
+    display: flex;
+}
+.linkBar li{
+    margin-right: 32px;
+}
+@media(max-width:1000px){
+    .linkBar li{
+        margin-right: 24px;
+        width: 24px;
+    }
+    .linkBar li:nth-child(3){
+        margin-right: 0;
+    }
+
+    .linkBar li img{
+        height: 100%;
+    }
+}
+@media(max-width:350px){
+    .linkBar li{
+        margin-right: 4px;
+    }
+}
+.phone{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.phone p{
+    padding-left: 20px;
+}
+@media(max-width:1000px){
+    .phone img{
+        width: 18px;
+        height: 18px;
+    }
+}
+.mail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+@media(max-width:1000px){
+    .mail img{
+        width: 28px;
+        height: 24px;
+    }
+}
+.mail p{
+    padding-left: 8px;
+}
+.footer span{
+    display: block;
+    border: 1px solid #FFFFFF;
+}
+.Terms{
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:768px){
+    .Terms{
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+}
+.Terms ul{
+    display: flex;
+}
+.Terms ul li{
+    margin-right: 24px;
+}
+.Terms ul li a:hover{
+    color:#000;
+}
+@media(max-width:1000px){
+    .Terms img{
+        display: none;
+    }
+    .Terms ul li:nth-child(2){
+        margin-right: 0;
+    }
+}
+@media(max-width:768px){
+    .Terms p{
+        font-size: $fontss;
+        margin-bottom: 10px;
+    }
+    .Terms a{
+        font-size: $fontss;
+    }
+}
+@media(max-width:414px){
+    .Terms ul li{
+        margin-right: 4px;
+    }
+}
